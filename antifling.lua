@@ -1,3 +1,7 @@
+if (getgenv().ANTIFLINGING) then return; end
+
+getgenv().ANTIFLINGING = true
+
 loadstring(game:HttpGet("https://raw.githubusercontent.com/L8X/phys/main/source.lua"))()
 
 local PhysicsService = game:GetService("PhysicsService")
